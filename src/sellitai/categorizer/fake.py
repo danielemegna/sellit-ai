@@ -7,6 +7,6 @@ class FakeProductCategorizer(ProductCategorizer):
         self,
         product_name: str,
         product_description: str,
-        available_categories: list[str],
+        available_categories: str,
     ) -> str:
-        return available_categories[0] if available_categories else ""
+        return "Elettronica -> Informatica"

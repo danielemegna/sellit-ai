@@ -8,6 +8,6 @@ class ProductCategorizer(ABC):
         self,
         product_name: str,
         product_description: str,
-        available_categories: list[str],
+        available_categories: str,
     ) -> str:
         ...
