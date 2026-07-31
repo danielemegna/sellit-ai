@@ -1,14 +1,14 @@
 import textwrap
 from importlib.resources import files
 
-from sellitai.categorizer.fake import FakeProductCategorizer
+from sellitai.categorizer.openai import OpenAIApiProductCategorizer
 
 
 def main() -> None:
     print("============= Sell It AI =============")
     print("Detecting category for the product ....")
 
-    categorizer = FakeProductCategorizer()
+    categorizer = OpenAIApiProductCategorizer()
     category = categorizer.category_for(
         product_name="Macchina da caffè Magnifica Evo ECAM292.81.B EX:1",
         product_description= textwrap.dedent("""\
@@ -22,6 +22,7 @@ def main() -> None:
 
     print(f"Category detected: {category}")
     print("Done.")
+    print("======================================")
 
 
 def fetch_subito_categories() -> str:

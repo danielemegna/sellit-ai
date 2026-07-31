@@ -10,6 +10,7 @@ main = "sellitai.main:main"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+openai = "^1.0.0"
 
 [build-system]
 requires = ["poetry-core"]
