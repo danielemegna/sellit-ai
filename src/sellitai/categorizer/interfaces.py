@@ -1,5 +1,7 @@
 from abc import ABC, abstractmethod
 
+from sellitai.categorizer.ecommerce import Ecommerce
+
 
 class ProductCategorizer(ABC):
 
@@ -8,6 +10,6 @@ class ProductCategorizer(ABC):
         self,
         product_name: str,
         product_description: str,
-        available_categories: str,
+        ecommerce: Ecommerce,
     ) -> str:
         ...

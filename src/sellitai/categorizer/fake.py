@@ -1,3 +1,4 @@
+from sellitai.categorizer.ecommerce import Ecommerce
 from sellitai.categorizer.interfaces import ProductCategorizer
 
 
@@ -7,6 +8,6 @@ class FakeProductCategorizer(ProductCategorizer):
         self,
         product_name: str,
         product_description: str,
-        available_categories: str,
+        ecommerce: Ecommerce,
     ) -> str:
         return "Elettronica -> Informatica"
