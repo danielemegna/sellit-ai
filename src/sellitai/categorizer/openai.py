@@ -21,8 +21,8 @@ class OpenAIApiProductCategorizer(ProductCategorizer):
         In un secondo blocco di testo ti invierò poi un elenco di possibili categorie.
         I blocchi sono separati da caratteri dash "-------------------------".
         Indicami tra quelle possibili la categoria più adatta per il prodotto che ti ho indicato.
-        Importante: NON inventare alcuna categoria, scegli tra una di quelle proposte.
-        Rispondi solo con il nome della categoria e del suo eventuale gruppo di appartenenza nel formato "Gruppo -> Categoria" senza aggiungere alcuna parola.
+        Importante: NON inventare alcuna nuova categoria, scegli tra una di quelle proposte.
+        Rispondi solo con il nome della categoria e dei sui eventuali gruppi di appartenenza nel formato "Gruppo -> Sottogruppo -> Categoria" senza aggiungere alcuna parola.
         --------------------------------------------------------------------------------- 
         Nome prodotto: [{product_name}]
         
