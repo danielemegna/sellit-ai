@@ -1,10 +1,15 @@
-from flask import Flask, Response, request
+from flask import Flask, Response, render_template, request
 
 from sellitai.categorizer.ecommerce import Ecommerce
 from sellitai.categorizer.interfaces import ProductCategorizer
 from sellitai.categorizer.openai import OpenAIApiProductCategorizer
 
 app = Flask(__name__)
+
+
+@app.get("/demo")
+def demo() -> str:
+    return render_template("demo.html")
 
 
 @app.post("/categorize")
