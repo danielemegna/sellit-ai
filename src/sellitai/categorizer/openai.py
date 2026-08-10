@@ -42,7 +42,7 @@ class OpenAIApiProductCategorizer(ProductCategorizer):
         )
 
         response = client.chat.completions.create(
-            model="Qwen3-Coder-30B-A3B-Instruct-MLX-4bit",
+            model="Qwen2.5-32B-Instruct-4bit",
             messages=[ChatCompletionUserMessageParam(content=prompt, role="user")],
         )
 
