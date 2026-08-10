@@ -1,0 +1,19 @@
+
+curl -s -X POST http://127.0.0.1:8001/categorize \
+  -H "Content-Type: application/json" \
+  -d '{
+    "product_name": "Macchina da caffè Magnifica Evo ECAM292.81.B EX:1",
+    "product_description": "Autenticità, innovazione e stile: Magnifica Evo è la espressione perfetta dell esperienza De Longhi. Dal perfetto espresso all italiana ad una ampia selezione di
+bevande, tutto al solo tocco di un tasto.",
+    "categories": "SUBITO"
+  }'
+
+----------------------------
+
+curl -s -X POST http://127.0.0.1:8001/categorize \
+  -H "Content-Type: application/json" \
+  -d '{
+    "product_name": "Tuta da moto in pelle Revit Intera Venom TG 48",
+    "product_description": "Tuta intera in pelle bovina di qualità, comoda ed elasticizzata per una piena libertà di movimento, con esterno parzialmente traforato per un confort di utilizzo incrementato. Realizzata in pelle bovina Monaco Performance altamente resistente alle abrasioni con protezioni marcate CE su spalle, gomiti, anche e ginocchia. Aree elasticizzate in PWR | shell, protezioni regolabili su spalle e ginocchia. Esterno semi perforato e gobba aerodinamica VCS mantiengono fresco anche quando la temperatura si alza.",
+    "categories": "SUBITO"
+  }'

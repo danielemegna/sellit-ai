@@ -1,0 +1,15 @@
+spiegami perché hai scelto questa categoria, ora puoi darmi risposte più estese
+
+------------------------------------------
+
+dammi ora un elenco di "Gruppo -> Categoria" ordinati per affinità con il prodotto, vicino ad ognuno metti la percentuale di affinità (mi aspetto in cima di trovare "Per la casa e la persona -> Elettrodomestici")
+
+------------------------------------------
+
+i want to implement in @src/sellitai/categorizer/openai.py the TODO point in category_for: on http://127.0.0.1:8000/v1 is running an OpenAI compatible API and i want to sent a oneshot message (no chat conversation) with the prompt i prepared in the "prompt" variable; then i want to obtain the text response and return it as function result;
+
+- the model i want to use is "Qwen3-Coder-30B-A3B-Instruct-MLX-4bit" and it is available on the API
+- leave default values for temperature and thinking parameters
+- evaluate to use a python library to execute the call, or implement as simple http post request: if you use a library please use the most used in the AI community, prioritizing library with simpler usage
+
+ask me questions if you have doubts, or propose me different possibilities

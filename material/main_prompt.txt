@@ -1,0 +1,69 @@
+Ti invierò in un primo blocco di testo il nome e la descrizione di un certo prodotto.
+In un secondo blocco di testo ti invierò poi un elenco di possibili categorie. Sono 38 categorie totali suddivise in 7 gruppi.
+I blocchi sono separati da caratteri dash "-------------------------".
+Vorrei mi indicassi la categoria più adatta per il prodotto che ti ho indicato e il gruppo a cui questa appartiene.
+Rispondi solo con il nome della categoria (e del suo gruppo di appartenenza) nel formato "Gruppo -> Categoria" senza aggiungere alcuna parola.
+Esempio di risposta: "Elettronica -> Informatica"
+---------------------------------------------------------------------------------
+Nome prodotto: [Macchina da caffè Magnifica Evo ECAM292.81.B EX:1]
+
+Descrizione prodotto:
+Autenticità, innovazione e stile: Magnifica Evo è l’espressione perfetta dell’esperienza De’Longhi.
+Dal perfetto espresso all’italiana ad un’ampia selezione di bevande, tutto al solo tocco di un tasto:
+arricchisci ogni tazzina con una cremosa schiuma di latte grazie alla Tecnologia LatteCrema Hot e alla funzione MyLatte,
+pensata per ridurre gli sprechi. Puoi scegliere tra 7 bevande one-touch preimpostate tramite un'interfaccia facile da utilizzare.
+---------------------------------------------------------------------------------
+# Categorie e Sottocategorie Subito.it
+
+## 1. Motori
+* Auto
+* Moto e Scooter
+* Accessori Auto
+* Accessori Moto
+* Veicoli commerciali
+* Caravan e Camper
+* Nautica
+* Altri Veicoli
+
+## 2. Immobili
+* Appartamenti
+* Camere / Posti letto
+* Ville - Villette
+* Terreni e Rustici
+* Loft, Mansarde e altro
+* Garage e Box
+* Uffici e Locali commerciali
+* Case vacanza
+
+## 3. Elettronica
+* Telefonia
+* Audio / Video
+* Informatica
+* Console e Videogiochi
+* Fotografia
+
+## 4. Per la casa e la persona
+* Elettrodomestici
+* Arredamento e Casalinghi
+* Giardino e Fai da te
+* Abbigliamento e Accessori
+* Tutto per i bambini
+
+## 5. Sport e Hobby
+* Animali
+* Accessori per animali
+* Biciclette
+* Sports
+* Musica e Film
+* Libri e Riviste
+* Strumenti Musicali
+* Collezionismo
+
+## 6. Lavoro e Servizi
+* Offerte di lavoro
+* Candidati in cerca di lavoro
+* Attrezzature di lavoro
+* Servizi
+
+## 7. Altro
+* Altri prodotti / oggetti non rientranti nelle sezioni precedenti
