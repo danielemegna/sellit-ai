@@ -16,13 +16,26 @@ class OpenAIApiProductCategorizer(ProductCategorizer):
         product_description: str,
         ecommerce: Ecommerce,
     ) -> str:
+
+        match ecommerce:
+            case Ecommerce.SUBITO:
+                prompt_answer_format = textwrap.dedent("""
+                Rispondi solo con il nome della categoria e del suo gruppo di appartenenza, senza aggiungere alcuna parola.
+                Le categorie sono di due livelli, voglio una risposta nel formato `Gruppo -> Categoria scelta`.
+                """)
+            case Ecommerce.VINTED:
+                prompt_answer_format = textwrap.dedent("""
+                Rispondi solo con il nome della categoria e dei sui gruppi di appartenenza, senza aggiungere alcuna parola.
+                Le categorie sono di tre livelli, voglio una risposta nel formato `Gruppo -> Sottogruppo -> Categoria scelta`.
+                """)
+
         prompt = textwrap.dedent("""
         Ti invierò in un primo blocco di testo il nome e la descrizione di un certo prodotto.
         In un secondo blocco di testo ti invierò poi un elenco di possibili categorie.
         I blocchi sono separati da caratteri dash "-------------------------".
         Indicami tra quelle possibili la categoria più adatta per il prodotto che ti ho indicato.
         Importante: NON inventare alcuna nuova categoria, scegli tra una di quelle proposte.
-        Rispondi solo con il nome della categoria e dei sui eventuali gruppi di appartenenza nel formato "Gruppo -> Sottogruppo -> Categoria" senza aggiungere alcuna parola.
+        {prompt_answer_format}
         --------------------------------------------------------------------------------- 
         Nome prodotto: [{product_name}]
         
@@ -31,6 +44,7 @@ class OpenAIApiProductCategorizer(ProductCategorizer):
         ---------------------------------------------------------------------------------
         {available_categories}\
         """).format(
+            prompt_answer_format=prompt_answer_format,
             product_name=product_name,
             product_description=product_description,
             available_categories=self._load_categories(ecommerce)
