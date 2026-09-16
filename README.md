@@ -4,16 +4,21 @@ Sell It on the Web with AI
 
 ## Setup
 
-```bash
-# Install Poetry (if not installed)
-curl -sSL https://install.python-poetry.org | python3 -
+A local running OpenAI API compatibile LLM engine is needed on `localhost:8000` to run the main or the tests (see `src/sellitai/categorizer/openai.py`).
 
-# Install dependencies
-poetry install
+Install uv (if not installed)
 
-# Run the program
-poetry run main
-
-# Enter shell
-poetry shell
 ```
+$ curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+Install project dependencies
+```
+$ uv sync
+```
+
+Starts the Flask server on http://localhost:8001
+```
+$ uv run main
+```
+
